@@ -1,0 +1,12 @@
+GET http://localhost:3000
+
+
+### read json file
+
+GET http://localhost:3000/json
+
+###
+GET http://localhost:3000/simplejson
+
+### nodejsondb 
+GET http://localhost:3000/nodejsondb

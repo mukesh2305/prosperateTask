@@ -1,12 +1,18 @@
-GET http://localhost:3000
+# GET http://localhost:3000
 
 
 ### read json file
 
-GET http://localhost:3000/json
+# GET http://localhost:4000/json
+
+### create json file
+GET http://localhost:5001/nodejsondb/file/create
+
+### 
+GET http://localhost:5001/nodejsondb/length
 
 ###
-GET http://localhost:3000/simplejson
+GET http://localhost:5001/nodejsondb/file/new
 
-### nodejsondb 
-GET http://localhost:3000/nodejsondb
+### get length of json file
+GET http://localhost:5001/nodejsondb/length

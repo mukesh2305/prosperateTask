@@ -5,14 +5,32 @@
 
 # GET http://localhost:4000/json
 
-### create json file
-GET http://localhost:5001/nodejsondb/file/create
+### create files 
+GET http://localhost:5011/nodejsondb/file/create
 
 ### 
-GET http://localhost:5001/nodejsondb/length
+GET http://localhost:5011/nodejsondb/import
 
-###
-GET http://localhost:5001/nodejsondb/file/new
+## path
+GET http://localhost:5011/nodejsondb/import
+
+### Object_collection_stats create 
+GET http://localhost:5011/nodejsondb/file/new
+
+### Object_collection_stats create1 
+GET http://localhost:5011/nodejsondb/file/new1
+
 
 ### get length of json file
-GET http://localhost:5001/nodejsondb/length
+GET http://localhost:5011/nodejsondb/length
+
+
+### datasource file create
+GET http://localhost:5011/nodejsondb/datasource
+
+### modifiy file
+GET http://localhost:5011/nodejsondb/modifiedFiles
+
+
+### modifiy file1
+GET http://localhost:5011/nodejsondb/modifiedFiles1

@@ -1,8 +1,10 @@
+// ------------------------------- create files ------------------------------------------
 const express = require('express');
 const router = express.Router();
 const JSONdb = require('simple-json-db');
 const { randomUUID } = require('crypto')
 const fs = require('fs')
+const dsname = require('../file/dataSource.json')
 // const fs = require('fs-extra');
 
 
@@ -10,8 +12,8 @@ const fs = require('fs')
 
 
 router.get('/generate', (req, res) => {
-    for (let index = 1; index <= 2000; index++) {
-        var dir = `./file/${index}.json`;
+    for (let index = 1; index <= 1; index++) {
+        var dir = `./file/${dsname[index].ds_name}.json`;
         fs.closeSync(fs.openSync(dir, 'w'));
     }
 });
